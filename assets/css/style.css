@@ -208,7 +208,7 @@ footer h2 {
     font-size: 20px;
 }
 
-#hero-image {
+.hero img {
     display: block;
     object-fit: cover;
     width: 100%;
