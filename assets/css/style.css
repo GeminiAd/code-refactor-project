@@ -8,6 +8,11 @@ body {
     background-color: #d9dcd6;
 }
 
+/*
+ *  The header contains two elements:
+ *      1. The 'logo' in the upper-left, which is a title element.
+ *      2. The nav element in the upper-right, which is a list of navigational links
+ */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +20,24 @@ header {
     color: #ffffff;
 }
 
+/*
+ *  This creates the styling for the 'Horiseon' Logo in the upper-left hand corner, in the header.
+ */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*
+ *  The 'seo' in the 'Horiseon' logo is an off-grey color.
+ */
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/*
+ *  This is the styling for the navigation links in the upper-right hand corner, in the header.
+ */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,6 +46,9 @@ header nav {
     font-size: 20px;
 }
 
+/*
+ *  The unordered list of navigational links is set not to have the dot in front of each element.
+ */
 header nav ul {
     list-style-type: none;
 }
@@ -41,6 +58,9 @@ header nav ul li {
     margin-left: 25px;
 }
 
+/*
+ *  The links in the navigation bar are set to be white and not to be underlined.
+ */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -50,30 +70,50 @@ p {
     font-size: 16px;
 }
 
+/*
+ *  This is the styling for the hero banner accross the top. A hero is an image that appears at the top of a website,
+ *  and usually takes up close to the full screen.
+ */
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
 
+    /* This centers the hero image within its figure parent container */
     display: flex;
     align-items: center;
     justify-content: center;
 
+    /* After the hero image is centered, any overflow splling out of the bottom is clipped */
     overflow: hidden;
 }
 
+/* 
+ *  Various CSS stylings for the image inside of the figure element with a class of hero. 
+ *  'object-fit: cover' had to be used here as the original html used the 'background-size: cover' property
+ *  to display the hero image, but I had to change that to an explicit image element in order to add an alt
+ *  property to the image as the prompt specified.
+ */
 .hero img {
     display: block;
     object-fit: cover;
     width: 100%;
 }
 
+/* 
+ *  Main is the area where each solution is displayed. Each solution is one of the services that the company
+ *  Horiseon offers. In practice, each 'solution' is a figure element with an image, a header, and a caption.
+ */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*
+ *  The benefits class is an <aside> element that contains 3 benefits.
+ *  Each benefit is a section element with a header and a figure element with an image and caption.
+ */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,6 +125,11 @@ main {
     background-color: #2589bd;
 }
 
+/*
+ *  Each benefit is little box on the right of the website that tells the customer one thing that Horiseon
+ *  can help them with. Each benefit is stacked vertically within the <aside> element. In practice, each
+ *  benefit consists of a section element with a header and a figure element with a caption.
+ */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
@@ -103,9 +148,10 @@ main {
 }
 
 /* 
-I'm calling each of the services that the company Horiseon provides a 'solution' -
-as in a solution to your problem.
-*/
+ *  I'm calling each of the services that the company Horiseon provides a 'solution' -
+ *  as in a solution to your problem. Each 'solution' in practice is a figure element
+ *  with a picture, and a header and some text as the caption, all wrapped around the image.
+ */
 .solution {
     margin-bottom: 20px;
     padding: 50px;
@@ -115,10 +161,16 @@ as in a solution to your problem.
     color: #ffffff;
 }
 
+.solution h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 .solution img {
     max-height: 200px;
 }
 
+/* The following three selectors I couldn't consolidate as each has a different float direction */
 #search-engine-optimization img {
     float: left;
     margin-right: 25px;
@@ -132,11 +184,6 @@ as in a solution to your problem.
 #social-media-marketing img {
     float: left;
     margin-right: 25px;
-}
-
-.solution h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 footer {
