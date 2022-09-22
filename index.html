@@ -28,7 +28,12 @@
         </nav>
     </header>
 
-    <!-- Changed <div class="hero"> to <figure class="hero"> as figure is more representative of what the hero banner is. -->
+    <!-- 
+        Changed <div class="hero"> to <figure class="hero"> as figure is more representative of what the hero banner is.
+        Also of note is that the original index.html just had <div class="hero"></div>, and the image was loaded in css using background-image and background-size.
+        Well, if you load the hero image that way, you cannot put alt attributes for accessibility. Therefore, I changed this code by loading the image using an
+        image element, and I had to style the image differently in the CSS file to make sure everything displayed the same.
+    -->
     <figure class="hero">
         <img src="./assets/images/digital-marketing-meeting.jpg" alt="Teammates collaborating.">
     </figure>
