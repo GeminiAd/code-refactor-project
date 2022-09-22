@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Changed the title from website to Horiseon Social Solution Services. -->
     <title>Horiseon Social Solution Services</title>
 </head>
 
 <body>
+    <!-- Changed <div class="header"> to the more semantic <header>. -->
     <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- Changed <div> to <nav> as this list is indicative of a navigation bar. -->
         <nav>
             <ul>
                 <li>
@@ -25,12 +28,28 @@
         </nav>
     </header>
 
+    <!-- Changed <div class="hero"> to <figure class="hero"> as figure is more representative of what the hero banner is. -->
     <figure class="hero">
         <img src="./assets/images/digital-marketing-meeting.jpg" alt="Teammates collaborating.">
     </figure>
 
+    <!-- Changed <div class="content"> to <main> as this is where the bulk of the visual real-estate is -->
     <main>
+
+        <!-- 
+            Changed the <div> that was here to a figure, as each of these <div> was a bundle of image and text, which is what a <figure> represents.
+            Also, each figure here used to have different classes - <figure id="search-engine-optimization"> had the class specified as "search-engine-optimization",
+            and <figure id="online-reputation-management"> had the class "online-reputation-management", for example. I set the class for each of these elements
+            to "solution", as each of these elements share many sizing and layout attributes.
+            I labeled the class as 'solution', as each of these figures is a business solution that Horiseon is providing to customers.
+        -->
         <figure id="search-engine-optimization" class="solution">
+
+            <!-- 
+                This image used to have the class "float-left", which made this element float-left. I felt like that was passing
+                some styling off to the html, so I removed that class and placed these float calls inside the css formatting for each 
+                of the following images.
+            -->
             <img src="./assets/images/search-engine-optimization.jpg" alt="A notepad with 'SEO' written on it."/>
             <figcaption>
                 <h2>Search Engine Optimization</h2>
@@ -59,9 +78,25 @@
         </figure>
     </main>
 
+    <!-- I changed this element from a <div> to an <aside> as the content is kind of on a sidebar and is only tangentially related to the main content -->
     <aside class="benefits">
+
+        <!-- 
+            Each of these sections used to be a <div>. I switched it to a <section> as a section is supposed to start with a header, which is how
+            these divs were set up. Also, each of these sections used to have their own class - the first section had a class of "benefit-lead", the
+            second section was class "benefit-brand", and the third was "benefit-cost". I switched all of these to class "benefit" as they share
+            identical styling attributes. 
+        -->
         <section class="benefit">
+
+            <!-- 
+                These headers used to be <h3>. According to good practice, each webpage should have 1 <h1> header, the next headers should be
+                <h2> headers, and <h3> headers should only be used if its a subheading. Since these <h3> headers weren't a subheader of any
+                <h2> header, for each benefit section I switched the <h3> header to an <h2> header and reduced the size of the text in the css file.
+            -->
             <h2>Lead Generation</h2>
+
+            <!-- For each of these benefits, I wrapped the image and caption within a <figure> and <figcaption> element, respectively. -->
             <figure>
                 <img src="./assets/images/lead-generation.png" alt="A gear with an arrow pointing downward, toward money."/>
                 <figcaption>
@@ -95,6 +130,7 @@
         </section>
     </aside>
 
+    <!-- I switched the <div class="footer"> to <footer>, which is more semantic -->
     <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
