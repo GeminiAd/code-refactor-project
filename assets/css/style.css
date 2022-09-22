@@ -166,9 +166,7 @@ main {
     font-size: 36px;
 }
 
-.solution img {
-    max-height: 200px;
-}
+.solution img { max-height: 200px; }
 
 /* The following three selectors I couldn't consolidate as each has a different float direction */
 #search-engine-optimization img {
@@ -193,6 +191,4 @@ footer {
     text-align: center;
 }
 
-footer h2 {
-    font-size: 20px;
-}
+footer h2 { font-size: 20px; }
