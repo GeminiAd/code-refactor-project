@@ -84,14 +84,14 @@ p {
     align-items: center;
     justify-content: center;
 
-    /* After the hero image is centered, any overflow splling out of the bottom is clipped */
+    /* After the hero image is centered, any overflow spilling out of the bottom is clipped */
     overflow: hidden;
 }
 
 /* 
- *  Various CSS stylings for the image inside of the figure element with a class of hero. 
+ *  Various CSS stylings for the image inside of the figure element with a class of hero.
  *  'object-fit: cover' had to be used here as the original html used the 'background-size: cover' property
- *  to display the hero image, but I had to change that to an explicit image element in order to add an alt
+ *  to display the hero image. I had to change that to an explicit image element in order to add an alt
  *  property to the image as the prompt specified.
  */
 .hero img {
@@ -129,18 +129,35 @@ main {
  *  Each benefit is little box on the right of the website that tells the customer one thing that Horiseon
  *  can help them with. Each benefit is stacked vertically within the <aside> element. In practice, each
  *  benefit consists of a section element with a header and a figure element with a caption.
+ *
+ *  CODE CONSOLIDATION:
+ *  Originally, there were three benefit classes: .benefit-lead, .benefit-brand, and .benefit-cost. All three of these
+ *  classes had the same propery, so I combined them into one class: benefit. Also, if only one element is assigned a
+ *  class, the id property should be used as an id is unique and used to refer to one specific element.
  */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/*
+ *  CODE CONSOLIDATION:
+ *  Originally, there were differenct classes assigned to each benefit, so there were three selectors
+ *  operating on each benefit's header. Since each the header of each of those elemenets is being
+ *  displayed the same, I consolidated all that code into one class below.
+ */
 .benefit h2 {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
 
+/*
+ *  CODE CONSOLIDATION:
+ *  Originally, there were three classes assigned to each benefit, so there were 3 classes to stylize
+ *  the image of each benefit. The properties of each of the benefit images were the same, so I just
+ *  combined them into this selector.
+ */
 .benefit img {
     display: block;
     margin: 10px auto;
@@ -149,8 +166,14 @@ main {
 
 /* 
  *  I'm calling each of the services that the company Horiseon provides a 'solution' -
- *  as in a solution to your problem. Each 'solution' in practice is a figure element
+ *  as in a marketing solution to your business. Each 'solution' in practice is a figure element
  *  with a picture, and a header and some text as the caption, all wrapped around the image.
+ *
+ *  CODE CONSOLIDATION:
+ *  Originally, there were three classes for each of the points in the main content:
+ *  .search-engine-optimization, .online-reputation-management, and .social-media-marketing.
+ *  All three of these classes had the same properties, so I combined them into one class
+ *  called solution, which represents a solution to your marketing problem.
  */
 .solution {
     margin-bottom: 20px;
@@ -161,11 +184,24 @@ main {
     color: #ffffff;
 }
 
+/*
+ *  CODE CONSOLIDATION:
+ *  Originally, there were three selectors to modify each header. Each selector 
+ *  operated the same, so I just combined them all here.
+ */
 .solution h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* 
+ *  I put all of this on one line just to make the code more readable and compact.
+ *
+ *  CODE CONSOLIDATION:
+ *  Originally there were three classes for each image as stated above, therefore there were
+ *  three selectors that were used to modify each solution's image. All three selectors
+ *  assigned the same property to the image, so I combined all three into this selector.
+ */
 .solution img { max-height: 200px; }
 
 /* The following three selectors I couldn't consolidate as each has a different float direction */
@@ -191,4 +227,5 @@ footer {
     text-align: center;
 }
 
+/* I put this on one line for readability purposes */
 footer h2 { font-size: 20px; }
