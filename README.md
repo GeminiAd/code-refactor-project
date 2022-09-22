@@ -1,30 +1,83 @@
-# Your Project Title
+<h1 align="center">
+  <br>
+  Hori<span color="#d9dcd6">seo<span>n
+  <br>
+</h1>
 
-## Description 
+<h3 align="center">A website providing solutions to help your business grow</h3>
 
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#accessibility-changes">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-Lastly, if your project is deployed, include a link to the deployed application here.
+![website screenshot](./assets/images/horiseon-website-demo.png)
 
-If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+## Key Features 
 
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
+### Search Engine Optimization
+The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
 
+### Online Reputation Management
+The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
 
-## Table of Contents (Optional)
+### Social Media Marketing
+Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
 
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+### Lead Generation
+Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
+### Brand Awareness
+Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
 
+### Cost Management
+As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
 
-## Installation
+## Accessibility Changes
+At Horiseon, we strive to make our technology more accessible. The following changes were made over the previous version of the website:
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+### Semantic HTML
+Semantic HTML elements clearly define their content. They are preferable to use over the more generic div tag, as it's easier to identify their function. The following changes were made to make Horiseon more semantically appropriate:
 
+- Changed <code>&lt;div class="header"&gt;</code> to <code>&lt;header&gt;</code>
+- Changed the <code>&lt;div&gt;</code> under the <code>&lt;h1&gt;</code> heading to <code>&lt;nav&gt;</code>
+- Changed <code>&lt;div class="hero"&gt;</code> to <code>&lt;figure class="hero"&gt;</code>
+- Changed <code>&lt;div class="content"&gt;</code> to <code>&lt;main&gt;</code>, since this is where the bulk of the visual space of the website is.
+- Changed <code>&lt;div class="search-engine-optimization"&gt;</code> to <code>&lt;figure id="search-engine-optimization" class="solution"&gt;</code>. I also wrapped a <code>&lt;figcaption&gt;</code> around the header and caption describing the image.
+- Changed <code>&lt;div id="online-reputation-management" class="online-reputation-management"&gt;</code> to <code>&lt;figure id="online-reputation-management" class="solution"&gt;</code>. I also wrapped a <code>&lt;figcaption&gt;</code> around the header and caption describing the image.
+- Changed <code>&lt;div id="social-media-marketing" class="social-media-marketing"&gt;</code> to <code>&lt;figure id="social-media-marketing" class="solution"&gt;</code>. I also wrapped a <code>&lt;figcaption&gt;</code> around the header and caption describing the image.
+- Changed <code>&lt;div class="benefits"&gt;</code> to <code>&lt;aside class="benefits"&gt;</code>. Since this content is on the side of the main content and tangentially related to the main content, I thought an <code>&lt;aside&gt;</code> element was the most appropriate.
+- Changed <code>&lt;div class="benefit-lead"&gt;</code> to <code>&lt;section class="benefit"&gt;</code>. I also wrapped the child <code>&lt;img&gt;</code> and captions of this <code>&lt;section&gt;</code> in a <code>&lt;figcaption&gt;</code>.
+- Changed <code>&lt;div class="benefit-brand"&gt;</code> to <code>&lt;section class="benefit"&gt;</code>. I also wrapped the child <code>&lt;img&gt;</code> and captions of this <code>&lt;section&gt;</code> in a <code>&lt;figcaption&gt;</code>.
+- Changed <code>&lt;div class="benefit-cost"&gt;</code> to <code>&lt;section class="benefit"&gt;</code>. I also wrapped the child <code>&lt;img&gt;</code> and captions of this <code>&lt;section&gt;</code> in a <code>&lt;figcaption&gt;</code>.
+- Changed <code>&lt;div class="footer"&gt;</code> to <code>&lt;footer&gt;</code>
+
+### Logical HTML without Styling
+HTML should provide the structure of a webpage and CSS should provide the styling. Reducing the amount of styling in the html document should make it easier to read. The following changes were made to reduce the styling in html:
+
+-
+
+### Accessible Alt Attributes
+Screen readers read the output of a website. It's important alt attributes are defined so that screen readers will properly read an image and disabled folks can enjoy any website. The following changes were made to make images more accessible:
+
+### Heading Attributes in Sequential Order
+There should only be 1 h1 header, the next header should be an h2, and one shouldn't use h3 unless it's a subheader of an h2. It's good practice. The following changes were made to facilitate that:
+
+### Concise, Descriptive Title
+Each website should have a short, descriptive title so that people know where they are navigating to.
+
+### Links All Function Correctly
+All the links in a website should work.
+
+### CSS Consolidation
+The amount of code should be a minimum in any project/website in order to reduce reduncancy and make values easy to read/change. A minimum amount of code makes our code easy to read and modify.
+
+### CSS Comments
+The CSS in any file should be commented to make it easier to understand for those not familiar with the code. It makes it easier to update our website if necessary.
 
 ## Usage 
 
