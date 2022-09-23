@@ -338,7 +338,7 @@ Our code has been thoroughly commented.
 
 ## Usage 
 
-Navigate to <a href="https://geminiad.github.com/code-refactor-project">Horiseon Code Refactor</a>
+Navigate to <a href="https://geminiad.github.io/code-refactor-project">Horiseon Code Refactor</a>
 
 ## Credits
 
